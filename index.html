@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <meta http-equiv="pragma" content="Pragma">
+    <meta http-equiv="cache-control" content="public">
+
+    <link rel="stylesheet" href="css/idangerous.swiper.css?v=130">
+    <link rel="stylesheet" href="css/animation.css?v=270">
+    <link rel="stylesheet" href="css/main.css?v=228">
+    <link rel="stylesheet" href="css/my.css"/>
+    <title>超级不文艺的情书</title>
+    <script type="text/javascript">
+        if (window.screen.height <= 500) {
+            document.write('<meta name="viewport" content="initial-scale=0.43,maximum-scale=0.43,minimum-scale=0.43" />');
+        } else {
+            var phoneWidth = parseInt(window.screen.width);
+            var phoneScale = phoneWidth / 640;
+
+            var ua = navigator.userAgent;
+            if (/Android (\d+\.\d+)/.test(ua)) {
+                var version = parseFloat(RegExp.$1);
+                // andriod 2.3
+                if (version > 2.3) {
+                    document.write('<meta name="viewport" content="width=640, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', target-densitydpi=device-dpi">');
+                    // andriod 2.3
+                } else {
+                    document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+                }
+            } else {
+                document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+            }
+        }
+    </script>
+</head>
+<body class="s-bg">
+<img style="opacity:0;position:absolute;z-index:-100;" src="images/share1.jpg"/>
+<section class="arrow-up">
+    <p class="css_sprite01"></p>
+</section>
+
+<section class="u-audio" data-src="media/music.mp3">
+    <p id="coffee_flow" class="btn_audio">
+        <strong class="txt_audio z-hide">关闭</strong>
+        <span class="music-icon css_sprite01 audio_open"></span>
+    </p>
+</section>
+<!-- loading start-->
+<div class="sloading"
+     style="height: 100%;width: 100%;position: absolute;top: 0;left: 0;z-index: 99999;background: rgb(37,37,37);">
+    <img src="images/loading.gif" class="limg" width="100%"/>
+</div>
+<!-- loading end -->
+
+<div class="swiper-container swiper-main">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide slide-1  main-swiper fenye" style="background-position: center center">
+            <div class="heart " animationType="a-flash"><img src="images/my/heart.png" width="40%"></div>
+            <div class="title-name" animationType="a-flyL2-1">
+                <div class="title-name-one title-text">Hey，甜二</div>
+                <div class="title-border"></div>
+                <div class="title-name-two title-text">这，是一封<span style="font-size: 50px;"> 情 </span>书</div>
+            </div>
+        </div>
+        <div class="swiper-slide slide-2 main-swiper" style="background-position: center center">
+            <img src="images/my/circle.gif" alt="" animationType="a-flyL2-1"
+                 style="position:absolute; opacity: 0.25;height: 100px; left: 20px; top: 30px;"/>
+            <img src="images/my/circle.gif" alt="" animationType="a-flyL2-1"
+                 style="position:absolute; opacity: 0.25;height: 50px; left: 120px; bottom: 330px;"/>
+            <img src="images/my/circle.gif" alt="" animationType="a-flyL2-3"
+                 style="position:absolute; opacity: 0.25;height: 80px; left: 60%; top: 130px;"/>
+            <img src="images/my/circle.gif" alt="" animationType="a-flyL2-2"
+                 style="position:absolute; opacity: 0.25;height: 30px; right: 20px; top: 270px;"/>
+            <img src="images/my/circle.gif" alt="" animationType="a-flyL2-2"
+                 style="position:absolute; opacity: 0.25;height: 80px; right: 60px; top: 100px;"/>
+            <img src="images/my/circle.gif" alt="" animationType="a-flyL2-2"
+                 style="position:absolute; opacity: 0.25;height: 80px; right: 80px; top: 400px;"/>
+            <img src="images/my/wind.gif" class="" alt="" animationType="a-flyL2-2"
+                 style="position:absolute; opacity: 0.15;height: 80px; left: 10%; top: 400px;"/>
+            <img src="images/my/sun.png" class="" alt="" animationType="a-flyL2-2"
+                 style="position:absolute; opacity: 0.75;height: 50px; left: 20%; top: 200px;"/>
+
+            <div class="times-line">
+                <div class="line-title">
+                    <div class="line-title-big animation opacity0" animationType="a-flyL2-1">遇</div>
+                    <div class="line-title-else animation opacity0" animationType="a-flyL2-1">见</div>
+                </div>
+                <div class="line-line  animation opacity0" animationType="a-flyR2-2"></div>
+                <div class="line-content">
+                    <div class="line-content-one  animation opacity0" animationType="a-flyR2-1">● 03月25日</div>
+                    <div class="line-content-two  animation opacity0" animationType="a-flyL2-2"> First meet,
+                        只是那天阳光正好，你的嘴角还带着笑。
+                    </div>
+                    <div class="line-content-img animation opacity0" animationType="a-flyL2-3"><img
+                            src="images/my/1.jpg" alt="" width="96%"/></div>
+                </div>
+            </div>
+            <div class="trees">
+                <div class="animation opacity0" animationType="a-flyL2-1">
+                    <div class="tree1 tree1-p2"></div>
+                    <div class="tree2 tree2-p2"></div>
+                </div>
+                <div class="animation opacity0" animationType="a-flyR2-1">
+                    <div class="tree3 tree3-p2"></div>
+                    <div class="tree4 tree4-p2"></div>
+                </div>
+                <div class="hill1 hill1-p2 animation opacity0" animationType="a-flyL2-2"></div>
+                <div class="hill2 hill2-p2 animation opacity0" animationType="a-flyR2-2"></div>
+                <div class="hill3 hill3-p2 animation opacity0" animationType="a-flyL2-3"></div>
+            </div>
+        </div>
+        <div class="swiper-slide slide-3 main-swiper" style="background-position: center center">
+            <div class="page-back">
+                <div class="page-back-div">
+                    <div class="animation opacity0" animationType="a-fadein31">在我的脑海里</div>
+                    <div class="animation opacity0" animationType="a-fadein31">In my mind,</div>
+                </div>
+
+                <div class="page-back-div animation opacity0" animationType="a-fadein32">
+                    <div><span style="font-size: 40px;">“伱”</span>的身影挥散不去</div>
+                    <div>The form of "you" will be scattered don't go</div>
+                </div>
+                <div class="page-back-div animation opacity0" animationType="a-fadein33">
+                    <img src="images/my/3.jpg" alt="" width="80%"/>
+                </div>
+            </div>
+            <div class="page-title">
+                <div class="page-title-one  ">
+                    <img src="images/my/black.gif" class="animation opacity0" animationType="a-fadein33">
+                    <span class="animation opacity0" animationType="a-fadeinL31">
+                        Cardiac
+                    </span>
+
+                </div>
+                <div class="page-border animation opacity0" animationType="a-length"></div>
+                <div class="page-title-two " >
+                    <span class="animation opacity0" animationType="a-fadeinR31">
+                        心动
+                    </span>
+                    <img src="images/my/black.gif" class="animation opacity0" animationType="a-fadein33">
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide slide-4 main-swiper" style="background-position: center center">
+            <div class="back-title">
+                <span class="back-title-big animation opacity0" animationType="a-rotateinRT1" >
+                    你说
+                </span>
+                <span class="back-title-else animation opacity0" animationType="a-rotateinRT1">
+                    --你是背影帝
+                </span>
+            </div>
+            <img src="images/my/cloud.png" class="animation opacity0" alt="" animationType="a-fadein31"
+                 style="position:absolute;height: 120px; right: 20%; top: 50px;"/>
+
+            <div>
+                <img src="images/my/2.jpg" alt="" class="animation opacity0" alt="" animationType="a-zoom"/>
+            </div>
+        </div>
+        <div class="swiper-slide slide-5 main-swiper" style="background-position: center center">
+            <div class="back-title">
+                <span class="back-title-big animation opacity0" alt="" animationType="a-flipinXmy">
+                    我说
+                </span>
+                <span class="back-title-else animation opacity0" alt="" animationType="a-flipinXmy2">
+                    --你这个小逗比
+                </span>
+            </div>
+            <img src="images/my/snow.png" class="animation opacity0" alt="" animationType="a-flyL2-2"
+                 style="position:absolute; opacity: 0.95;height: 120px; right: 20%; top: 50px;"/>
+
+            <div>
+                <img src="images/my/wechat.jpg" alt="" width="80%" class="animation opacity0" alt="" animationType="a-zoom"/>
+            </div>
+            <div class="page-title">
+                <div class="page-title-one animation opacity0" style="font-size: 36px"  animationType="a-fadeinL31">
+                    一开始求学长带，
+                </div>
+                <div class="title-border  animation opacity0" animationType="a-length"></div>
+                <div class="page-title-two animation opacity0" style="font-size: 36px" animationType="a-fadeinR31">
+                    后来变成了专属鼓励狮
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide slide-6 main-swiper" style="background-position: center center">
+            <div class="code-page-div" style="text-align: center">
+                <img src="images/my/on2.jpg" alt="" width="100%" class="wechat" style="margin-top: 20%"/>
+            </div>
+            <div class="code-page-div" style="text-align: left">
+                <div class="code-eng animation opacity0" animationType="a-flyLmy">
+                    <div >Me.main(void){</div>
+                    <div style="padding-left: 10px;">while(1){</div>
+                    <div style="padding-left: 20px;">Happiness(You);}}</div>
+                </div>
+            <div class="code-chinese animation opacity0" animationType="a-flyRmy" style="text-align: right">
+                <div>我的主要目标</div>
+                <div>无条件的</div>
+                <div>让你一直逗比下去</div>
+            </div>
+            </div>
+        </div>
+        <div class="swiper-slide slide-7 main-swiper endpage" style="background-position: center center">
+            <div class="last-page-img">
+                <img src="images/my/both.jpg" alt="" width="50%" class="animation opacity0" animationType="a-fadein31"/>
+            </div>
+            <div class="last-page-title animation opacity0" animationType="a-fadein32">
+                <div class="last-page-title-content" >未来的路</div>
+                <div class="last-page-line"></div>
+                <div class="last-page-title-two">一起疯</div>
+                <div style="clear: both"></div>
+            </div>
+            <div class="last-page-item">
+                <div class=" animation opacity0" animationType="a-fadein33">一起去听演唱会</div>
+                <div class=" animation opacity0" animationType="a-fadein34" style="font-size: 30px">一起去旅行</div>
+                <div class=" animation opacity0" animationType="a-fadein35" style="font-size: 20px">一起去见世面</div>
+                <div class=" animation opacity0" animationType="a-fadein36" style="font-size: 10px">一起…………</div>
+            </div>
+            <div class="last-page-cop animation opacity0" animationType="a-fadein37" >From Wade【超级不文艺的程序猿】. Copyright Wade.</div>
+        </div>
+
+    </div>
+</div>
+<div id="div-invite" style="display: none;">
+    <div class="point" onclick="showShare();"></div>
+    <div class="fk" style="color: #fff; text-align: center; font-size: 3em;" onclick="showShare();">
+        <img src="images/arrow1.png" style="width: 100%;margin-top: -36%"/>
+        请点击右上角<br/><br/>
+        【发送给朋友】或【分享到朋友圈】<br/><br/>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/zepto.min.js?v=1"></script>
+<script src="js/idangerous.swiper.js"></script>
+<script src="js/my.js"></script>
+<!--<script src="js/main.js?v=171"></script>-->
+<!--<script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F89064dfd2722a1bad82f77ba5525e0aa' type='text/javascript'%3E%3C/script%3E"));
+</script>-->
+
+</body>
+</html>  

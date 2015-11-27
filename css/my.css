@@ -1,0 +1,328 @@
+.heart {
+    -webkit-animation: 6s ease-in-out infinite;
+    -webkit-animation-name: flash;
+    -webkit-transform-origin: right bottom;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    transition: 0.8s ease-out;
+    -webkit-transition: 0.8s ease-out;
+}
+
+body {
+    font-family: 'Microsoft Yahei', Tahoma, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+
+.slide-1 {
+    background: #FFCCCC;
+}
+
+.slide-2 {
+    /*background: url("/images/my/1.jpg");*/
+    /*background-size: 100%;*/
+    /*background-image: url(http://res.eqxiu.com//group1/M00/8C/DE/yq0KA1UT4c-ATgdGAAGeL5h0Gns252.png);*/
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.main-swiper {
+    transition: 0.8s ease-out;
+    -webkit-transition: 0.8s ease-out;
+}
+
+.title-name {
+    color: #ffffff;
+    font-size: 40px;
+    position: absolute;
+    bottom: 20%;
+    left: 15%;
+    width: 70%;
+    -webkit-transition: 0.8s ease-out;
+}
+
+.title-name-one {
+    text-align: left;
+}
+
+.title-name-two {
+    text-align: right;
+}
+
+.title-text {
+    /*opacity: 0;*/
+    /*height: 0;*/
+    -webkit-transition: 0.8s ease-out;
+    display: none;
+}
+.wechat{
+    -webkit-transition: 0.8s ease-out;
+    -webkit-animation: 6s ease-in-out infinite;
+    animation: 6s ease-in-out infinite;
+    -webkit-animation-name: wobble;
+    animation-name: wobble;
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    transition: 0.8s ease-out;
+}
+.lastimg{
+    -webkit-transition: 0.8s ease-out;
+    -webkit-animation: 6s ease-in-out infinite;
+    animation: 6s ease-in-out infinite;
+    -webkit-animation-name: shake;
+    animation-name: shake;
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    transition: 0.8s ease-out;
+}
+/*-webkit-animation-name: fadeinB;*/
+.title-border {
+    background: #ffffff;
+    width: 0;
+    height: 2px;
+    -webkit-transition: 0.8s ease-out;
+    -webkit-animation: 6s ease-in-out infinite;
+    animation: 6s ease-in-out infinite;
+    -webkit-animation-name: shake;
+    animation-name: shake;
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    transition: 0.8s ease-out;
+}
+
+.page-border {
+    background: #ffffff;
+    width: 100%;
+    height: 2px;
+}
+
+.item {
+    transform: rotate(10deg) scale(1.2);
+    -ms-transform: rotate(10deg) scale(1.2);
+    -webkit-transform: rotate(10deg) scale(1.2);
+    -moz-transform: rotate(60deg) scale(1.2);
+}
+
+.times-line {
+    position: relative;
+    width: 80%;
+    margin: 100px auto;
+}
+
+.line-title {
+    position: relative;
+    float: left;
+    width: 30%;
+}
+
+.line-title-big {
+    font-size: 68px;
+    color: #79c450;
+    margin: 0;
+    padding: 0;
+}
+
+.line-title-else {
+    padding: 0;
+    font-size: 40px;
+    color: #ffffff;
+    margin: 0;
+    text-align: right;
+}
+
+.line-line {
+    height: 500px;
+    width: 1px;
+    background: #ffffff;
+    float: left;
+    margin: 0 10px;
+    position: relative;
+}
+
+.line-content {
+    position: relative;
+    float: left;
+    width: 60%;
+    padding-top: 100px;
+}
+
+.line-content-one {
+    color: #79c450;
+    font-size: 30px;
+    text-align: left;
+}
+
+.line-content-img {
+    position: relative;
+    text-align: left;
+}
+
+.line-content-two {
+    text-align: left;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 26px;
+}
+
+.page-back {
+
+    color: #676767;
+    line-height: 1;
+    background: rgb(245, 246, 250);
+    list-style: none !important;
+    margin: 50px auto !important;
+    padding: 0;
+    -webkit-transition: padding .5s;
+    -moz-transition: padding .5s;
+    transition: padding .5s;
+    min-height: 24px;
+    min-width: 50px;
+    -webkit-user-select: none;
+    width: 70%;
+    height: 60%;
+    z-index: 2;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.page-title {
+    position: relative;
+    color: #ffffff;
+    font-size: 40px;
+    width: 70%;
+    margin: auto;
+}
+
+.page-title img {
+    height: 80px;
+    vertical-align: middle;
+}
+
+.page-title-one {
+    text-align: left;
+}
+
+.page-title-two {
+    text-align: right;
+}
+
+.page-back-div {
+    padding: 70px 20px 0;
+
+}
+
+.back-title {
+    text-align: left;
+    color: #ffffff;
+    padding: 0;
+    margin: 50px auto;
+    width: 100%;
+}
+
+.back-title-big {
+    font-size: 60px;
+    font-weight: 600;
+    padding-left: 20px;
+}
+
+.back-title-else {
+    padding-top: 20px;
+    font-size: 40px;
+}
+
+.code-page-div {
+    margin: auto;
+    width: 80%;
+}
+
+.slide-5 {
+    background-size: 100% 100%;
+}
+
+.slide-6, .slide-7 {
+    font-size: 40px;
+    text-align: center;
+    /*padding-top: 20%;*/
+
+}
+
+.code-eng, .code-chinese {
+    padding: 10px;
+    width: 49%;
+    float: left;
+    margin: auto;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    font-size: 30px;
+}
+
+.code-eng {
+    border: 2px solid #FFFFFF;
+    background: #000033;
+    margin-right: 2%;
+    color: #FFFFFF;
+}
+
+.code-chinese {
+    border: 2px solid #000033;
+    color: #000033;
+    background: #FFFFFF;
+    font-weight: 600;
+}
+
+div {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.last-page-img {
+    padding-top: 10%;
+}
+
+.last-page-title {
+    font-size: 60px;
+    width: 162px;
+    margin: auto;
+}
+
+.last-page-title-content {
+    width: 60px;
+    float: left;
+    margin-right: 20px;
+}
+
+.last-page-line {
+    width: 2px;
+    height: 340px;
+    background: #000000;
+    float: left;
+}
+
+.last-page-title-two {
+    width: 60px;
+    float: left;
+    margin-left: 20px;
+    padding-top: 40px;
+}
+
+.last-page-item {
+    text-align: left;
+    width: 50%;
+    margin: 30px auto;
+
+}
+
+.last-page-cop {
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 30px;
+    font-size: 16px;
+}
+
+.slide-7 {
+    color: #000000;
+}

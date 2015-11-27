@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<meta http-equiv="pragma" content="Pragma">
+	<meta http-equiv="cache-control" content="public">
+
+	<link rel="stylesheet" href="css/idangerous.swiper.css?v=130">
+	<link rel="stylesheet" href="css/animation.css?v=270">
+	<link rel="stylesheet" href="css/main.css?v=228">
+	<title>测一测你的开心指数</title>
+	<script type="text/javascript">
+		if(window.screen.height <=500){
+			document.write('<meta name="viewport" content="initial-scale=0.43,maximum-scale=0.43,minimum-scale=0.43" />');
+		}else{
+		var phoneWidth = parseInt(window.screen.width);
+		var phoneScale = phoneWidth / 640;
+
+		var ua = navigator.userAgent;
+		if (/Android (\d+\.\d+)/.test(ua)) {
+			var version = parseFloat(RegExp.$1);
+			// andriod 2.3
+			if (version > 2.3) {
+				document.write('<meta name="viewport" content="width=640, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', target-densitydpi=device-dpi">');
+				// andriod 2.3
+			} else {
+				document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+			}
+		}else {
+			document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+		}
+	}
+	</script>
+</head>
+<body class="s-bg">
+	<img style="opacity:0;position:absolute;z-index:-100;" src="images/share1.jpg" />
+    <section class="arrow-up">
+    	<p class="css_sprite01"></p>
+    </section>
+
+    <section class="u-audio" data-src="media/music.mp3">
+    	<p id="coffee_flow" class="btn_audio">
+    		<strong class="txt_audio z-hide">关闭</strong>
+    		<span class="music-icon css_sprite01 audio_open"></span>
+    	</p>
+    </section>
+    <!-- loading start-->
+    <div class="sloading" style="height: 100%;width: 100%;position: absolute;top: 0;left: 0;z-index: 99999;background: rgb(37,37,37);">
+		<img src="images/loading.gif" class="limg" width="100%"/>
+	</div>
+    <!-- loading end -->
+
+	<div class="swiper-container swiper-main">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide slide-1 main-swiper fenye p1bg" data-src="images/P1-bg.jpg">
+				<div class="busmain opacity0">
+					<div class="bus a-bus">
+						<div class="balloon1 a-balloon1"></div>
+						<div class="balloon2 a-balloon2"></div>
+						<!--<div class="balloon3 a-balloon3"></div>-->
+						<div class="balloon4 a-balloon4"></div>
+						<!--<div class="balloon5 a-balloon5"></div>-->
+						<div class="body"></div>
+						<div class="wheel1 a-wheel"></div>
+						<div class="wheel2 a-wheel"></div>
+						<div class="butterfly1 a-butterfly1"></div>
+						<div class="butterfly2 a-butterfly2"></div>
+					</div>
+					<div class="shadow a-shadow"></div>
+				</div>
+				<div class="scenic">
+					<div class="tree1 tree1-p1 a-move1"></div>
+					<div class="tree2 tree2-p1 a-move2"></div>
+					<div class="tree3 tree3-p1 a-move3"></div>
+					<div class="tree4 tree4-p1 a-move4"></div>
+					<div class="hill1 hill1-p1 a-move5"></div>
+					<div class="hill2 hill2-p1 a-move6"></div>
+					<div class="hill3 hill3-p1 a-move7"></div>
+				</div>
+				<div class="p1f1 opacity0"></div>
+			</div>
+			<div class="swiper-slide slide-2 main-swiper p1bg swiper-no-swiping" data-src="images/P1-bg.jpg">
+				<div class="p2f1 animation" animationType="a-flyToggle"></div>
+				<div class="trees">
+					<div class="animation opacity0" animationType="a-flyL2-1">
+						<div class="tree1 tree1-p2"></div>
+						<div class="tree2 tree2-p2"></div>
+					</div>
+					<div class="animation opacity0" animationType="a-flyR2-1">
+						<div class="tree3 tree3-p2"></div>
+						<div class="tree4 tree4-p2"></div>
+					</div>
+					<div class="hill1 hill1-p2 animation opacity0" animationType="a-flyL2-2"></div>
+					<div class="hill2 hill2-p2 animation opacity0" animationType="a-flyR2-2"></div>
+					<div class="hill3 hill3-p2 animation opacity0" animationType="a-flyL2-3"></div>
+				</div>
+				<div class="p2f2 animation opacity0" animationType="a-fadeinB3"></div>
+				<div class="p2f4 animation opacity0" animationType="a-flyR2-3"></div>
+				<div class="p2f3 printloc animation opacity0" animationType="a-fadein2-1">
+					<div class="a-scan line"></div>
+					<div class="err-remind">长按试试！</div>
+				</div>
+			</div>
+			<div class="swiper-slide slide-3 main-swiper p1bg" data-src="images/P1-bg.jpg">
+				<canvas id="canvas" width="330" height="330"></canvas>
+				<div class="p3f1 opacity0"></div>
+				<div class="p3f2-1"></div>
+				<div class="p3f2-2"></div>
+			</div>
+			<div class="swiper-slide slide-4 main-swiper p4bg" style="background-position: center center">
+				<div class="p4f2 animation" animationType="a-fadeinR"></div>
+				<div class="progress-bar-1"></div>
+				<div class="progress-bar-2 animation" animationType="a-grow1"></div>
+				<div class="p4f3 animation" animationType="a-fadeinB1"></div>
+				<div class="lunb">
+					<div class="swiper-container swiper-children swiper-children-1">
+						<div class="pagination pagination-children-1"></div>
+					    <div class="swiper-wrapper">
+						    <div class="swiper-slide"><div class="pwh p41"></div></div>
+						    <div class="swiper-slide"><div class="pwh p42"></div></div>
+						     <div class="swiper-slide"><div class="pwh p43"></div></div>
+					    </div>
+					</div>
+				</div>
+				<div class="p4f1 animation" animationType="a-fadeinB"></div>
+			</div>
+			<div class="swiper-slide slide-5 main-swiper p4bg" style="background-position: center center">
+				<div class="p5f1 animation" animationType="a-fadeinR"></div>
+				<div class="progress-bar-1"></div>
+				<div class="progress-bar-2 animation" animationType="a-grow2"></div>
+				<div class="p4f3 animation" animationType="a-fadeinB1"></div>
+				<div class="lunb">
+					<div class="swiper-container swiper-children swiper-children-2">
+						<div class="pagination pagination-children-2"></div>
+					    <div class="swiper-wrapper">
+						    <div class="swiper-slide"><div class="pwh p51"></div></div>
+						    <div class="swiper-slide"><div class="pwh p52"></div></div>
+						    <div class="swiper-slide"><div class="pwh p53"></div></div>
+						    <div class="swiper-slide"><div class="pwh p54"></div></div>
+					    </div>
+					</div>
+				</div>
+				<div class="p5f2 animation" animationType="a-fadeinB"></div>
+			</div>
+			<div class="swiper-slide slide-6 main-swiper p4bg" style="background-position: center center">
+				<div class="p6f1 animation" animationType="a-fadeinR"></div>
+				<div class="progress-bar-1"></div>
+				<div class="progress-bar-2 animation" animationType="a-grow3"></div>
+				<div class="p4f3 animation" animationType="a-fadeinB1"></div>
+				<div class="lunb">
+					<div class="swiper-container swiper-children swiper-children-3">
+						<div class="pagination pagination-children-3"></div>
+					    <div class="swiper-wrapper">
+						    <div class="swiper-slide"><div class="pwh p61"></div></div>
+						    <div class="swiper-slide"><div class="pwh p62"></div></div>
+						    <div class="swiper-slide"><div class="pwh p63"></div></div>
+						    <div class="swiper-slide"><div class="pwh p64"></div></div>
+					    </div>
+					</div>
+				</div>
+				<div class="p6f2 animation" animationType="a-fadeinB"></div>
+			</div>
+			<div class="swiper-slide slide-7 main-swiper p4bg" style="background-position: center center">
+				<div class="p7f1 animation" animationType="a-fadeinR"></div>
+				<div class="progress-bar-1"></div>
+				<div class="progress-bar-2 animation" animationType="a-grow4"></div>
+				<div class="p4f3 animation" animationType="a-fadeinB1"></div>
+				<div class="lunb">
+					<div class="swiper-container swiper-children swiper-children-4">
+						<div class="pagination pagination-children-4"></div>
+					    <div class="swiper-wrapper">
+						    <div class="swiper-slide"><div class="pwh p71"></div></div>
+						    <div class="swiper-slide"><div class="pwh p72"></div></div>
+						    <div class="swiper-slide"><div class="pwh p73"></div></div>
+					    </div>
+					</div>
+				</div>
+				<div class="p7f2 animation" animationType="a-fadeinB"></div>
+			</div>
+			<div class="swiper-slide slide-8 main-swiper p4bg" style="background-position: center center">
+				<div class="p8f1 animation" animationType="a-fadeinR"></div>
+				<div class="progress-bar-1"></div>
+				<div class="progress-bar-2 animation" animationType="a-grow5"></div>
+				<div class="p4f3 animation" animationType="a-fadeinB1"></div>
+				<div class="lunb">
+					<div class="swiper-container swiper-children swiper-children-5">
+						<div class="pagination pagination-children-5"></div>
+					    <div class="swiper-wrapper">
+						    <div class="swiper-slide"><div class="pwh p81"></div></div>
+						    <div class="swiper-slide"><div class="pwh p82"></div></div>
+						    <div class="swiper-slide"><div class="pwh p83"></div></div>
+					    </div>
+					</div>
+				</div>
+				<div class="p8f2 animation" animationType="a-fadeinB"></div>
+			</div>
+			<div class="swiper-slide slide-9 main-swiper p9bg" style="background-position: center center">
+				<div class="p9f1 animation" animationType="a-fadeinT"></div>
+				<div class="animation" animationType="a-fadeinB">
+					<div class="p9f2 a-swing1"></div>
+				</div>
+				<div class="qqgif"><img src="images/P9-f2.png"></div>
+				<div class="rm-btn animation" animationType="a-fadeinB">摇晃手机求签</div>
+				<audio id="qiuq" src="media/yq.mp3" preload="preload"></audio>
+			</div>
+			<div class="swiper-slide slide-10 main-swiper p10bg" style="background-position: center center">
+				<div class="qianw qian1"></div>
+			</div>
+			<div class="swiper-slide slide-11 main-swiper p11bg endpage" style="background-position: center center">
+				<div class="p11f3 animation" animationType="a-fadeinT1"></div>
+				<div class="share-btn animation" animationType="a-fadeinT1" onclick="showShare();">分&emsp;享</div>
+				<div class="ewm animation" animationType="a-fadeinB2"></div>
+				<div class="p11f2 animation" animationType="a-fadeinB2"></div>
+				<div class="balloon-link animation opacity0" animationType="a-bouncein11-1">
+					<a href="http://tk.tianker.com/Agent/Park/mobileProductsList.aspx?supplierID=182">&nbsp;&nbsp;点这里，开启溪口开心之旅！</a>
+					<div></div>
+				</div>
+				<div class="mlf animation opacity0" animationType="a-flyL11-1"></div>
+			</div>
+		</div>
+	</div>
+	<div id="div-invite" style="display: none;">
+		<div class="point" onclick="showShare();"></div>
+		<div class="fk" style="color: #fff; text-align: center; font-size: 3em;" onclick="showShare();">
+			<img src="images/arrow1.png" style="width: 100%;margin-top: -36%"/>
+			请点击右上角<br/><br/>
+			【发送给朋友】或【分享到朋友圈】<br/><br/>
+		</div>
+	</div>
+	<script src="js/zepto.min.js?v=1"></script>
+  	<script src="js/idangerous.swiper.js"></script>
+	<script src="js/main.js?v=171"></script>
+</body>
+</html>  
